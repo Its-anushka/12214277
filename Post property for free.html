@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+<head>
+<title>Post property for free</title>
+</head>
+<style>
+body{background-image:url("VILLA LANDSCAPE DESIGN (1).jpg"); background-size:cover;}
+div{border: 8px solid black; background-color:#EBCCAB; width: 700px; height: 500px; padding:50px; margin:auto; border radius:50px}
+select{width:30%; font-family:Californian fb ; border:2px solid black;}
+input[type=text],[type=button]{width:30%; font-family:californian fb; }
+input[type=button]{color:black; border:2px solid black;}
+input[type=button]:hover,[type=button]:focus{background-color:black; color:white}
+h1{width:250px; border: 3px solid white; padding:10px; margin:auto; font-family:Viner Hand ITC; text-align:center; color:white; background-color:black;}
+h2{font-family:Californian fb; text-align:center;background-color:black; color:white} </style>
+<body>
+
+<div> 
+<h1>ADL ESTATES</h1>
+<h2>~~ Post Property for free~~</h2>
+<p style = "font-family:californian fb; font-size:150%;" class="A">
+
+What kind of property do you have?<br><br>
+Residential:
+<select name="drop" class="A">
+<option value="f/a">Flat/apartment</option>
+<option value="house" >House/villa</option>
+<option value="Independent/builder floor">Independent/builder floor</option>
+<option value="Plot/land">Plot/land</option>
+<option value="Serviced">Serviced apartment</option>
+<option value="Farmhouse">Farmhouse</option>
+</select>
+Commercial:
+<select name="drop" class="A">
+<option value="office">Office</option>
+<option value="Retail">Retail</option>
+<option value="Plot/land">Plot/land</option>
+<option value="Storage">Storage</option>
+<option value="Industry">Industry</option>
+<option value="Hospitality">Hospitality</option>
+</select><br><br><br>
+Your contact details for the buyer to reach you:<br><label for="fn">Phone number/ Email/ Username</label>
+<input type="text" name="contact" id="fn" class="A"></input><br><br>
+
+<center><input type="button" value="Continue" onclick="fun2( )"></center></div>
+<script>
+function fun2( ){var cval = confirm("Do you want to submit?") 
+if (cval==true){
+document.getElementById("fn").innerHTML="Your details were posted"; 
+}
+
+}
+</script>
+
+</body>
+</html>

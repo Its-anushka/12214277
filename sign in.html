@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+<head>
+<title>Sign In</title>
+</head>
+<style>
+body
+{background-image:url("VILLA LANDSCAPE DESIGN (1).jpg"); background-size:cover;}
+div{border: 8px solid black; background-color:#EBCCAB; width: 400px; height: 400px; padding:50px; margin:auto; border-radius:50px}
+select{width:30%; font-family:Californian fb ; border:2px solid black;}
+input[type=text],[type=button]{width:30%; font-family:californian fb; }
+input[type=button]{color:black; border:2px solid black; margin: auto}
+input[type=button]:hover,[type=button]:focus{background-color:black; color:white}
+</style>
+<body>
+<div>
+<form method="post">
+<h1 style="font-family:Californian fb; text-align:center; background-color:black; color: white">Sign In</h1><br><br><br><br>
+Username: <input type="text" name = "usern" class="S"><br><br>
+Password: <input type="password" name = "pwd" class="S"><br><br><br>
+<input type = "button" value ="submit"  style="width:20%" onclick="fun( )" ><br><br>
+<p class="S" >New to our website? <a href="Sign up.html">Sign Up</a></p>
+<p id="I"></p>
+</form>
+</div>
+
+<script>
+{
+function fun( )
+{document.getElementById("I").innerHTML="Succesfully logged in";}
+}
+
+
+</script>
+</body>
+</html>
